@@ -1,0 +1,23 @@
+//
+//  bookreader.pch
+//  BookReader
+//
+//  Created by apple on 16/9/11.
+//  Copyright © 2016年 刘朝龙. All rights reserved.
+//
+
+#ifndef bookreader_pch
+#define bookreader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <AFNetworking.h>
+
+#define ColorWithRGB(r,g,b) ColorWithRGBA(r,g,b,100.0)
+#define ColorWithRGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a/100.f]
+#define ColorWithHSB(h,s,b) ColorWithHSBA(h,s,b,1.0)
+#define ColorWithHSBA(h,s,b,a) [UIColor colorWithHue:h/360.0f saturation:s/100.0f brightness:b/100.0f alpha:a/100.0f]
+
+#define BASE_BACKGROUND_COLOR ColorWithRGB(249,253,240)
+
+#endif /* bookreader_pch */
